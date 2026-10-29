@@ -328,6 +328,19 @@ footer a:hover {
   color: var(--pink);
 }
 
+/* Footer social media icons */
+.footer-social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  gap: 14px;
+}
+
+.footer-social-icons a {
+    color: var(--blue) !important;
+    font-size: 20px;
+}
 /* 9. ANIMATIONS */
 @keyframes rise-in {
   from {
@@ -403,6 +416,7 @@ footer a:hover {
   .eyebrow {
     font-size: 0.72rem;
     letter-spacing: 2px;
+    font-weight: 800;
   }
 
   .hero p {
@@ -604,4 +618,75 @@ footer a:hover {
   #projects .project-grid {
     grid-template-columns: 1fr;
   }
+}
+.fa-python {
+    font-size: 40px;
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+.git-icon {
+    font-size: 40px;
+    color: #ec4899;
+    margin-bottom: 15px;
+}
+.docker-icon {
+    font-size: 40px;
+    color: #2496ed;
+    margin-bottom: 15px;
+}
+.html-icon {
+    font-size: 40px;
+    color: #e34f26;
+    margin-bottom: 15px;
+}
+
+.css-icon {
+    font-size: 40px;
+    color: #264de4;
+    margin-bottom: 15px;
+}
+/* Arrange skill cards neatly */
+#skills .cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px; 
+    align-items: stretch;
+    width: 100%;
+}
+/* Make skill cards fit their grid columns */
+#skills .card {
+    width: 100%;
+    max-width: none;
+}
+
+
+/* Footer social media icons */
+.footer-social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  gap: 14px;
+}
+.footer-social-icons a {
+  color: var(--blue);
+  font-size: 20px;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ec4899;
+  transform: translateY(-3px);
+}
+#skills .card h3 {
+  font-weight: 700;
 }
